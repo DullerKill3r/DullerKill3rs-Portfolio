@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(80,80,135)
+}
+
+.body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+/*  */
+@font-face {
+  font-family: 'gotham';
+  src: url('GothamRnd-Medium.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Apply the font */
+body {
+  font-family: 'gotham', sans-serif;
+}
+/*  */
+
+/*  */
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('GothamRnd-Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Apply the font */
+body {
+  font-family: 'gotham-bold', sans-serif;
+}
+/*  */
+
+
+.TopGroup {
+background-color: rgb(45,45,66);
+min-width: 90vw;
+max-width: 100vw;
+width: calc(100vw - 23px);
+min-height: 45px;
+height: 4vh;
+max-height: 4vh;
+border: 4px solid rgb(66,66,90);
+overflow: hidden;
+display: flex;
+justify-content: space-between;
+position: sticky;
+top: 0px;
+}
+
+.TopButton {
+color: rgb(211,211,255);
+font-family: gotham-bold;
+font-size: 185%;
+}
+
+.DeepTextStroke {
+text-shadow: rgb(20,20,35) 3px 3px 0.1px, /* STROKE START */
+rgb(20,20,35) -2px -2px 0.1px,
+rgb(20,20,35) 2px -2px 0.1px,
+rgb(20,20,35) 0.1px -2px 0.1px,
+rgb(20,20,35) 0.1px 2px 0.1px,
+rgb(20,20,35) -2px 2px 0.1px,
+rgb(20,20,35) 3.5px 0.1px 0.1px,
+rgb(20,20,35) 4px 0.5px 0.1px,
+rgb(20,20,35) 4.5px 1px 0.1px,
+rgb(20,20,35) 5px 2.5px 0.1px,
+rgb(20,20,35) 7px 4px 0.1px !important;   /* STROKE END */
+}
+
+#LeftMenuDiv {
+align-items: center;
+vertical-align: top;
+margin-left: 25px;
+}
+
+#RightMenuDiv {
+align-items: center;
+vertical-align: top;
+margin-right: 25px;
+}
+
+.HeadGroup {
+background: linear-gradient(180deg,rgb(80,80,135), rgb(20,20,60));
+/* height: 100vh; */
+border: 4px solid rgb(80,80,135);
+border-radius: 13px;
+width: calc(100vw - 25px);
+min-width: 95vw;
+max-width: 100vw;
+overflow-x: hidden;
+}
+
+.TopText {
+font-size: 30px;
+font-family: gotham-bold;
+color: rgb(211,211,255);
+margin-top: 50px;
+position: relative;
+}
+
+.BaseImageTextOffset {
+  top: 320px;
+  left: 200px;
+  position: relative;
+}
+
+.GameIconImageTextOffset {
+  top: 245px;
+  left: 8px;
+  position: relative;
+}
+
+
+.Menu {
+Display: flex;
+flex-wrap: wrap;
+overflow: hidden;
+justify-content: space-between;
+
+}
+
+.RightSideDiv {
+  overflow: visible;
+  margin-right: 25px;
+  min-width: 460px;
+  max-width: 460px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.LeftSideDiv {
+  overflow: visible;
+  margin-left: 25px;
+  min-width: 460px;
+  max-width: 460px;
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 1150px) { /* PC */
+  .Menu {
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+}
+
+@media screen and (max-width: 1150px) { /* MOBILE */
+  .Menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .LeftSideDiv {
+    margin: 0 auto 0 auto;
+  }
+  .RightSideDiv {
+    margin: 0 auto 0 auto;
+  };
+}
+
+.Left {
+  padding-left: 30px;
+}
+
+.Right {
+  margin-left: 30px;
+}
+
+
+
+.ImageType {
+  border: 5px solid;
+  border-radius: 8px;
+  border-color: rgb(45,45,120);
+  margin-left: 15px;
+  box-shadow: 6px 6px 5px rgb(35,35,70);
+}
+
+.MidDescription {
+  max-width: 415px;
+  min-width: 415px;
+  height: 165px;
+  min-height: 165px;
+  max-height: 200px;
+}
+
+.SmallDescription {
+  max-width: 415px;
+  min-width: 415px;
+  height: 125px;
+  min-height: 125px;
+  max-height: 166px;
+}
+
+.BigDescription {
+  max-width: 415px;
+  min-width: 415px;
+  height: 200px;
+  min-height: 200px;
+  max-height: 250px;
+}
+
+.BaseText {
+  font-size: 22px;
+  font-family: gotham-bold;
+  color: rgb(211,211,255);
+  margin-top: 0px;
+  margin-left: 18px;
+
+  max-width: 415px;
+  min-width: 415px;
+}
+
+.BaseColor {
+  color: rgb(211,211,255);
+}
+
+.Title {
+  font-size: 50px;
+  width: 100%;
+  text-align: center;
+}
+
+.TopIconDiv {
+  max-width: 45px;
+  width: 45px;
+  min-width: 45px;
+  margin: auto 0 auto 0;
+  padding-left: 5px;
+}
+
+.SpacingDiv {
+  display: flex;
+  justify-content: space-between;
+  overflow: visible;
+  max-width: calc(100vw - 235px);
+  min-width: calc(100vw - 235px);
+  padding-top: 3px;
+}
+
+.TopIcon {
+  max-height: 37px;
+  max-width: 37px;
+  margin-left: 2px;
+  margin-top: 3px;
+}
+
+
+.TopButtonDiv {
+  padding-top: 3px;
+  visibility: visible;
+  display: inline;
+  width: 225px;
+  margin-right: 10px;
+}
+
+.SplitBar {
+  border: 3px solid rgb(95,95,145);
+  background-color: rgb(95,95,145);
+  border-radius: 15px;
+  max-width: 90%;
+  margin: auto  auto  0 auto;
+  min-width: 90%;
+  margin-bottom: 20px;
+}
+
+#MainButton {
+  text-align: left;
+}
+
+
+.Link {
+  max-width: 4px;
+  text-decoration: none !important;
+  font-size: 27px;
+}
+
+.LinkColor{
+  color: rgb(0, 255, 115) !important;
+}
+
+
+
+@media screen and (max-width: 700px) {
+  .TopButtonDiv {
+    display: none;
+  }
+  .SpacingDiv {
+    max-width: calc(100vw - 80px) !important;
+    min-width: calc(100vw - 80px) !important;
+  };
+
+
+}
